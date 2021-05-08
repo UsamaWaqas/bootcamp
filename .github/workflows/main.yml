@@ -31,7 +31,7 @@ jobs:
         with:
           version: 12
       # Runs a set of commands using the runners shell
-      - name: package-deploy-bot
+      - name: installing npm
         uses: danitseitlin/npm-package-deployer@alpha
         with:
          cmd: install
