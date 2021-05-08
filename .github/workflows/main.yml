@@ -31,8 +31,8 @@ jobs:
         with:
           version: 12
       # Runs a set of commands using the runners shell
-      - name: installing npm
-        uses: danitseitlin/npm-package-deployer@alpha
+     - name: NPM install cache
+        uses: c-hive/gha-npm-cache@v1
         with:
          cmd: install
 
