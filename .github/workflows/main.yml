@@ -25,12 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+     
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.5
         with:
           version: 12
       
+
+
+
      - name: NPM install cache
         uses: c-hive/gha-npm-cache@v1
         with:
@@ -40,8 +43,7 @@ jobs:
         run  : npm build
         
         
-        
-        
+            
       - name: package-deploy-bot
         run : npm install --global surge
         
