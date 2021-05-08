@@ -33,7 +33,7 @@ jobs:
       
 
 
-      - name: Setup Node.js environment
+      - name: npm install cache
         uses: c-hive/gha-npm-cache@v1
         with:
          cmd: install
