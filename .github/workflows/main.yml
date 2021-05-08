@@ -31,8 +31,8 @@ jobs:
         with:
           version: 12
       
-     - name: NPM install cache
-        uses: c-hive/gha-npm-cache@v1
+      - name: npm install cache
+        uses:  c-hive/gha-npm-cache@v1
         with:
          cmd: install
 
