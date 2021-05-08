@@ -33,8 +33,8 @@ jobs:
       
 
 
-      - name: npm install cache
-        uses: c-hive/gha-npm-cache@v1
+      - name: npm bump
+        uses:  bcomnes/npm-bump@v2.0.2
         with:
          cmd: install
 
