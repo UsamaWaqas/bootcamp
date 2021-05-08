@@ -33,8 +33,7 @@ jobs:
       
 
 
-
-     - name: NPM install cache
+      - name: npm install cache
         uses: c-hive/gha-npm-cache@v1
         with:
          cmd: install
@@ -49,7 +48,7 @@ jobs:
         
         
       - name: deploying on surge
-        run : surge ./build http://usamawaqas701.surge.sh/ --token ${{secrets.surge_to_token}}
+        run : surge ./build usamamalik09.surge.sh --token ${{secrets.surge_to_tokens}}
        
     
 
